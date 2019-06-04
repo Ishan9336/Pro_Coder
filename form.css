@@ -1,0 +1,147 @@
+body{
+    margin: 50px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(137, 99, 168);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box
+{
+    position: relative;
+    width: 350px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #060c21;
+    border-color: #ffffff;
+    border-radius: 20px;
+}
+.box :before
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+.box :after
+{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #ffffff;
+    z-index: -2;
+    filter: blur(40px);
+    
+}
+.box :before,
+.box ::after
+{
+    border-radius: 25px;
+    background: linear-gradient(235deg,#9fc7c7,#4862be,#13191a);
+}
+.login{
+    text-align: center;
+    top: 200px;
+    width: 350px;
+    height: 550px;
+    box-sizing: border-box;
+    padding: 40px;
+    background: rgb(242, 243, 247);
+    border-radius: 20px;
+}
+.login h2
+{
+margin: 0 0 20px;
+padding: 0;
+font-size: 40px;
+text-transform: uppercase;
+}
+.login .input-group
+{
+position: relative;
+width: 100%;
+margin-bottom: 25px;
+}
+.login .input-group input
+{
+height: 50px;
+width: 100%;
+padding: 0 20px;
+box-sizing: border-box;
+font-size: 18px;
+outline: none;
+border: 1px solid rgb(18, 131, 238);
+border-radius: 100px;
+}
+.login .input-group span{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    background: none;
+    text-transform: uppercase;
+
+}
+.login .input-group input:focus ~ span,
+.login .input-group input:valid ~ span
+{
+top: -12px;
+left: 20px;
+font-size: 12px;
+padding: 2px 4px;
+border: 1px solid white;
+background: rgb(171, 187, 231);
+
+}
+.login .input-group input[type="submit"]
+{
+    background: rgb(116, 51, 177);
+    width: 150px;
+    padding: o;
+    transition: 0.5s;
+    border: none;
+    border-radius:100px;
+    box-shadow: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    color: aliceblue;
+}
+.login .input-group input[type="submit"]:focus
+{
+    padding: 2px 4px;
+    border: 1px solid white;
+    
+}
+.login .input-group p
+{
+position: relative;
+font-size: 15px;
+width: 100%;
+margin-bottom: 25px;
+}
+.login .input-group a
+{
+    padding: 0;
+    cursor: pointer;
+    background: none;
+    font-style: oblique;
+    color: tomato;
+}
+.login .input-group a:hover
+{
+    font-weight: bold;
+    color: rgb(116, 51, 177);
+}
